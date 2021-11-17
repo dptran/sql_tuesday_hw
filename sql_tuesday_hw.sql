@@ -1,4 +1,4 @@
---1. How many actors are there with the last name ‘Wahlberg’? 
+--1. How many actors are there with the last name ï¿½Wahlbergï¿½? 
 select count(*)
 from actor
 where last_name like 'Wahlberg'
@@ -14,10 +14,10 @@ from inventory
 group by film_id
 order by count DESC
 
---4. How many customers have the last name ‘William’?
+--4. How many customers have the last name ï¿½Williamï¿½?
 select count(*)
 from customer
-where last_name like 'William%'
+where last_name like 'William'
 
 --5. What store employee (get the id) sold the most rentals? 
 select staff_id, count(staff_id)
@@ -35,7 +35,7 @@ from film_actor
 group by film_id
 order by count DESC
 
---8. From store_id 1, how many customers have a last name ending with ‘es’? (use customer table) 
+--8. From store_id 1, how many customers have a last name ending with ï¿½esï¿½? (use customer table) 
 select count(*)
 from customer
 where last_name like '%es' and store_id = 1
